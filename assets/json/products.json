@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Especial",
+    "ingredientes": ["jamon", " huevo", "aceitunas", "roquefort"],
+    "precio": 5000
+  },
+  {
+    "id": 2,
+    "nombre": "muza",
+    "ingredientes": ["muzzarella"],
+    "precio": 6000
+  },
+  {
+    "id": 3,
+    "nombre": "muza",
+    "ingredientes": ["muzzarella"],
+    "precio": 7500
+  },
+  {
+    "id": 4,
+    "nombre": "muza",
+    "ingredientes": ["muzzarella"],
+    "precio": 4500
+  },
+  {
+    "id": 5,
+    "nombre": "muza",
+    "ingredientes": ["muzzarella"],
+    "precio": 200
+  }
+]

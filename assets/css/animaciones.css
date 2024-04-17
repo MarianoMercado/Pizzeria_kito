@@ -26,8 +26,6 @@ html {
   display: none;
 }
 
-/* SOY RODRI DEL PASADO MARCANDO EL OPEN-MENU */
-
 .show-overlay {
   display: block;
 }
@@ -42,7 +40,7 @@ html {
   content: "";
   height: 2px;
   width: 100%;
-  background: var(--text-white);
+  background: var(--fire);
   position: absolute;
   bottom: 0;
   left: 0;

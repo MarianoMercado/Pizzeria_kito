@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/animaciones.css" />
+    <link rel="stylesheet" href="../assets/css/mediaqueries.css" />
+  </head>
+  <body>
+    <header class="header">
+      APIS
+      <nav class="navbar">
+        <label class="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="../index.html">Inicio</a></li>
+          
+          <!-- <li><a id="MetodoGet" class="navbar-link">GET</a></li>
+          <li><a id="MetodoFilter" class="navbar-link">Filtrar</a></li>
+          <li><a id="MetodoNew" class="navbar-link">Nuevo</a></li>
+          <li><a id="MetodoDelete" class="navbar-link">Borrar</a></li> -->
+        </ul>
+
+        <div class="overlay"></div>
+      </nav>
+    </header>
+    <main>
+      <section id="SectionLogin">
+        <div class="loginContainer">
+          <div class="login">
+            <div class="login-header">
+              <h2>ADMNINISTRACION/h2>
+            </div>
+
+            <div class="login-body">
+              <form class="form-container-login" novalidate>
+                <!-- usuario -->
+                <div class="input-container">
+                  <i class="fa-solid fa-user"></i>
+                  <input class="input-text" placeholder="Ingrese su Usuario" />
+                  <small class="Smallmsj"></small>
+                </div>
+
+                <!-- contrseña -->
+                <div class="input-container">
+                  <i class="fa-sharp fa-solid fa-user-lock"></i>
+                  <input
+                    class="input-text"
+                    placeholder="Ingrese su Contraseña"
+                  />
+                  <small class="Smallmsj"></small>
+                </div>
+              </form>
+            </div>
+            <div class="login-footer">
+              <input class="login-btnIngresar" type="submit" value="Ingresar" />
+
+              <a class="login-btnRegistrarse" href="/assets/pages/register.html"
+                >¿No tienes Cuenta?</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

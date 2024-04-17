@@ -18,7 +18,7 @@
     width: 90%;
     flex-direction: column;
     background-color: var(--nav-bg);
-    border: 2px solid var(--electric);
+    border: 2px solid var(--fire);
     border-top: 0px;
     border-radius: 0px 0px 15px 15px;
     align-items: flex-start;
@@ -33,23 +33,20 @@
   }
 
   /* Mostramos el icono del menu */
-  .menu-label {
+  .toggle-menu {
     display: flex;
     order: 2;
     cursor: pointer;
   }
 
-  .menu-label img {
+  .toggle-menu i {
     height: 20px;
     width: 25px;
   }
 
-/* SOY RODRI DEL PASADO MARCANDO EL OPEN-MENU */
-
-  .open-menu {
+  .open-Navbar {
     display: flex;
   }
-
 
   /*Hero*/
 
@@ -195,6 +192,7 @@
 
   .product {
     width: 100%;
+    max-width: 300px;
   }
 
   .product-info h3,
@@ -211,6 +209,14 @@
   .footer-links {
     flex-direction: column;
     text-align: center;
+  }
+  .hero-info h1 span::after {
+    width: 0.1rem;
+    /* background: linear-gradient(to top, #30cfd0, #c43ad6); */
+    background: linear-gradient(to top, var(--background), var(--background));
+  }
+  .hero-info h1 {
+    animation: fade 4s ease-in forwards, slide-right 1.3s ease-in-out;
   }
 }
 
@@ -229,5 +235,11 @@
   }
   .item-info {
     text-align: center;
+  }
+  iframe {
+    width: 80%;
+  }
+  .footer-info {
+    justify-content: start;
   }
 }

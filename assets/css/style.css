@@ -1,5 +1,7 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -81,6 +83,19 @@ header {
   color: var(--text-white);
   font-weight: 600;
 }
+.active-menu {
+  color: var(--text-white);
+  font-weight: 600;
+}
+.toggle-menu {
+  color: var(--white);
+  font-size: 36px;
+  display: none;
+}
+#toggle-menu {
+  display: none;
+}
+
 /* hover link */
 .navbar-link::after {
   content: "";
@@ -92,7 +107,7 @@ header {
   transform-origin: left;
   transform: scaleX(0);
   transition: 0.3s;
-  background-color: var(--shadow);
+  background-color: var(--fire);
 }
 .navbar-link:hover::after {
   transform: scaleX(1);
@@ -134,7 +149,14 @@ main {
   color: transparent;
   -webkit-background-clip: text;
 }
-
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  background: linear-gradient(to top, var(--msj-error), var(--fire));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
 .hero-info p {
   font-size: 14px;
   width: 70%;
@@ -317,6 +339,7 @@ main {
   padding: 40px 0;
   max-width: 1200px;
   width: 100%;
+  text-align: center;
 }
 
 #products h2,
@@ -349,6 +372,7 @@ main {
 .product img {
   height: 100px;
   width: 200px;
+  margin: auto;
 }
 .product-info {
   display: flex;
@@ -385,7 +409,8 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 60px 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--white);
 }
 .footer-horus {
   display: flex;
@@ -415,37 +440,328 @@ footer {
   gap: 10px;
   font-size: 15px;
 }
-
-.footer-top {
+.footer-info {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  text-align: center;
-  align-items: end;
+  /* justify-content: space-around; 
+  align-items: center;*/
+  flex-wrap: wrap;
+  padding: 10px 0;
+  gap: 10px;
+  border-bottom: 1px solid var(--white);
   width: 100%;
-  border-top: 1px solid var(--gray);
-  padding-top: 10px;
+  justify-content: space-around;
+  align-items: start;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 5px;
+}
+.footer-links-title {
+  font-size: 16px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+.footer-links li {
+  font-family: "Domine", serif;
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  margin-left: 51px;
 }
 
-footer img {
+/* hover link */
+.footer-links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.3s;
+  background-color: var(--white);
+}
+.footer-links li:hover::after {
+  transform: scaleX(1);
+}
+.footer-links li:hover {
+  transform: scaleX(1);
+  cursor: pointer;
+}
+
+.Footer-info-dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px 0;
+}
+.name {
+  font-family: "Tangerine", cursive;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.des {
+  color: var(--white-ligth);
+  font-size: 0.9rem;
+}
+
+/* ************************ LOGIN*/
+
+#SectionLogin {
+  margin-top: 65px;
+
+  max-width: 1200px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: calc(100vh - 65px);
+}
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+
+  max-width: 1500px;
+  background: var(--gray);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 25px 25px var(--btn-bg);
+  margin-top: 20px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  font-family: "Domine", serif;
+  gap: 10px;
+}
+.login-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+}
+.login-header h2 {
+  color: var(--white);
+  text-align: center;
+  border-bottom: 1px solid var(--white);
+}
+.login-body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-container-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.input-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
 }
-.footer-contact {
+.input-text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  color: var(--back);
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 0px 8px 8px 0px;
+  width: 200px;
 }
 
-.footer-form--info {
+.input-text::placeholder {
+  color: var(--marron);
+  font-size: 0.6rem;
+}
+
+.input-container i {
+  height: 100%;
+  background-color: var(--marron);
+  color: var(--white);
+  border-radius: 8px 0px 0px 8px;
+  padding: 0.5rem;
+}
+.login-btnIngresar,
+.Register-btnIngresar {
+  border-radius: 5px;
+  border: none;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  border: none;
+  padding: 5px 10px;
+  color: var(--bg-black);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.login-btnIngresar:hover,
+.Register-btnIngresar:hover {
+  border-color: 1px solid var(--sky-blue);
+  /* background-color: transparent; */
+  background: linear-gradient(to bottom, var(--mist), var(--stone));
+  /* color: var(--white); */
+  box-shadow: var(--white) 0 0 5px;
+}
+.login-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login-footer a {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: var(--white);
+  font-size: 16px;
+  padding: 5px;
+  font-weight: 900;
+}
+.login-footer a:hover {
+  border-color: 1px solid var(--sky-blue);
+  background-color: var(--white);
+  border-radius: 5px;
+  color: var(--bg-black);
+  box-shadow: var(--gray) 0 0 5px;
+}
+/***********************************************
+ page register
+
+ ********************************************** */
+
+#SectionRegister {
+  background-image: url(/assets/imagenes/paisaje.jpg);
+  /* filter: brightness(50%); */
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Domine", serif;
+  gap: 10px;
+  color: var(--white);
+}
+.RegisterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 90px;
+  max-width: 1500px;
+  background: var(--bg-black);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 25px 25px var(--bg-black);
+}
+
+/*valicacionessssssssssssssssss*/
+
+.empty-msg {
+  /* font-size: 20px; */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}
+/*modal*/
+.add-modal {
+  padding: 15px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  color: var(--text-white);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 100px;
+  transition: all 0.5s ease-out;
+  border-radius: 20px 10px;
+  transform: translateY(200%);
+}
+
+/*validaciones msj*/
+.Smallmsj {
+  font-size: 10px;
+  font-weight: 400;
+}
+.MsjError {
+  color: var(--msj-error);
+}
+.MsjSuccess {
+  color: var(--msj-succes);
+}
+.inputValidarError {
+  border: 1px solid var(--msj-error);
+}
+.inputValidarSucces {
+  border: 1px solid var(--msj-succes);
+}
+#name:focus,
+#lastName:focus,
+#email:focus,
+#textarea:focus {
+  outline: none;
+}
+/*validaciones modal*/
+.error {
+  background-color: var(--msj-error);
+}
+
+.success {
+  background-color: var(--msj-succes);
+}
+.modale-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+.modale-body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 15px;
+  color: var(--white);
+}
+.active-modal {
+  transform: translateY(0);
+  transition: all 0.5s ease-in;
 }

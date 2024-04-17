@@ -1,32 +1,65 @@
 [
   {
     "id": 1,
-    "nombre": "Especial",
-    "ingredientes": ["jamon", " huevo", "aceitunas", "roquefort"],
+    "nombre": "MUZZARELLA",
+    "ingredientes": ["Muzzarella", "aceitunas"],
     "precio": 5000
   },
   {
     "id": 2,
-    "nombre": "muza",
-    "ingredientes": ["muzzarella"],
+    "nombre": "ESPECIAL",
+    "ingredientes": [
+      "Muzzarella",
+      "jamón cocido",
+      "morron",
+      "huevos y aceitunas"
+    ],
     "precio": 6000
   },
   {
     "id": 3,
-    "nombre": "muza",
-    "ingredientes": ["muzzarella"],
+    "nombre": "FUGAZZETA",
+    "ingredientes": ["Muzzarella", "cebolla", "aceitunas"],
     "precio": 7500
   },
   {
     "id": 4,
-    "nombre": "muza",
-    "ingredientes": ["muzzarella"],
+    "nombre": "ROQUEFORT",
+    "ingredientes": ["Muzzarella", "queso roquefort", "aceitunas"],
     "precio": 4500
   },
   {
     "id": 5,
-    "nombre": "muza",
-    "ingredientes": ["muzzarella"],
+    "nombre": "NAPOLITANA",
+    "ingredientes": [
+      "Muzzarella",
+      "tomates frescos",
+      "albahaca",
+      "queso sardo",
+      "aceitunas"
+    ],
+    "precio": 200
+  },
+  {
+    "id": 6,
+    "nombre": "PANCETA",
+    "ingredientes": [
+      "Muzzarella",
+      "panceta ahumada",
+      "huevos fritos",
+      "aceitunas"
+    ],
+    "precio": 200
+  },
+  {
+    "id": 7,
+    "nombre": "BODOCCA (AGRIDULCE)",
+    "ingredientes": [
+      "champignon",
+      "becolla caramelizada",
+      "mostaza y miel",
+      "panceta ahumada"
+    ],
     "precio": 200
   }
 ]
